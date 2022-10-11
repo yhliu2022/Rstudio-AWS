@@ -1,3 +1,22 @@
+install most updated R
+https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-22-04
+
+install most updated R server
+https://www.rstudio.com/products/rstudio/download-server/debian-ubuntu/
+
+remove old R
+https://www.r-bloggers.com/2022/01/upgrading-r/
+
+remove old Rstudio server
+sudo apt-get remove rstudio-server
+
+create account user
+sudo adduser colin
+
+To access this R web-based development platform simply note down the server-ip-address and use that with port number 8787. 
+
+
+
 
 AWS R Rstudio
 https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/
