@@ -1,27 +1,35 @@
 install most updated R
 https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-22-04
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo gpg --dearmor -o /usr/share/keyrings/r-project.gpg
+echo "deb [signed-by=/usr/share/keyrings/r-project.gpg] https://cloud.r-project.org/bin/linux/ubuntu jammy-cran40/" | sudo tee -a /etc/apt/sources.list.d/r-project.list
+sudo apt update
+sudo apt install --no-install-recommends r-base
+sudo -i R
 
 install most updated R server
 https://www.rstudio.com/products/rstudio/download-server/debian-ubuntu/
+sudo apt-get install gdebi-core
+wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.07.2-576-amd64.deb
+sudo gdebi rstudio-server-2022.07.2-576-amd64.deb
 
 remove old R
 https://www.r-bloggers.com/2022/01/upgrading-r/
+dpkg -l | grep -E "(r-base-core|cran)"
+sudo apt-get purge -y r-base-core
 
 remove old Rstudio server
 sudo apt-get remove rstudio-server
 
 create account user
 sudo adduser colin
-
 To access this R web-based development platform simply note down the server-ip-address and use that with port number 8787. 
 
 
 
 
-AWS R Rstudio
+#AWS R Rstudio - problematic 
 https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/
 https://www.how2shout.com/linux/install-rstudio-server-open-source-on-ubuntu-20-04-lts/
-
 https://askubuntu.com/questions/1403619/mongodb-install-fails-on-ubuntu-22-04-depends-on-libssl1-1-but-it-is-not-insta
 
 Oracle
