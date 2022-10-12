@@ -24,7 +24,12 @@ create account user
 sudo adduser colin
 To access this R web-based development platform simply note down the server-ip-address and use that with port number 8787. 
 
-
+install azure
+https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/#:~:text=To%20install%20R%20on%20Ubuntu%2020.04%2C%20follow%20these,may%20take%20a%20few%20minutes%20to%20complete.%20
+sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+sudo apt install r-base
 
 
 #AWS R Rstudio - problematic 
