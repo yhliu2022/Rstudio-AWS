@@ -1,3 +1,6 @@
+Oracle
+https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/#:~:text=To%20install%20R%20on%20Ubuntu%2020.04%2C%20follow%20these,may%20take%20a%20few%20minutes%20to%20complete.%20
+
 install most updated R
 https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-22-04
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo gpg --dearmor -o /usr/share/keyrings/r-project.gpg
